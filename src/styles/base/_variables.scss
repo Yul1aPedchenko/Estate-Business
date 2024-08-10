@@ -1,0 +1,35 @@
+$absoluteColors: (
+  "white": #fff,
+  "black": #000,
+);
+$purpleShades: (
+  "purple60": #703bf7,
+  "purple65": #8254f8,
+  "purple70": #946cf9,
+  "purple75": #a685fa,
+  "purple90": #dbcefd,
+  "purple95": #ede7fe,
+  "purple97": #f4f0fe,
+  "purple99": #fbfaff,
+);
+$whiteShades: (
+  "white90": #e4e4e7,
+  "white95": #f1f1f3,
+  "white97": #f7f7f8,
+  "white99": #fcfcfd,
+);
+$greyShades: (
+  "grey08": #141414,
+  "grey10": #1a1a1a,
+  "grey15": #262626,
+  "grey20": #333333,
+  "grey30": #4d4d4d,
+  "grey40": #666666,
+  "grey50": #808080,
+  "grey60": #999999,
+);
+
+@function getColor($key) {
+  @return map-get($absoluteColors, $key), map-get($purpleShades, $key),
+    map-get($whiteShades, $key), map-get($greyShades, $key);
+}

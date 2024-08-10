@@ -1,0 +1,17 @@
+<extends
+  src="html/layouts/_html.html"
+  locals='{
+    "pageTitle": "Home",
+    "pageClass": "home-page"
+}'
+>
+  <block name="main">
+    <main>
+        <include src="html/pages/home/hero/_hero.html"></include>
+        <include src="html/pages/home/services/_services.html"></include>
+        <include src="html/pages/home/properties/_properties.html"></include>
+        <include src="html/pages/home/reviews/_reviews.html"></include>
+        <include src="html/pages/home/questions/_questions.html"></include>
+    </main>
+  </block>
+</extends>
