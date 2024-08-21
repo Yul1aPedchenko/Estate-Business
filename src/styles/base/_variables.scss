@@ -1,3 +1,4 @@
+@use "sass:map";
 $absoluteColors: (
   "white": #fff,
   "black": #000,
@@ -30,6 +31,6 @@ $greyShades: (
 );
 
 @function getColor($key) {
-  @return map-get($absoluteColors, $key), map-get($purpleShades, $key),
-    map-get($whiteShades, $key), map-get($greyShades, $key);
+  @return map.get($absoluteColors, $key), map.get($purpleShades, $key),
+    map.get($whiteShades, $key), map.get($greyShades, $key);
 }
