@@ -17,11 +17,11 @@ html {
 html {
   position: relative;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+       text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -85,7 +85,7 @@ blockquote {
 
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-  text-decoration-skip-ink: auto;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -129,9 +129,9 @@ button:disabled {
   cursor: default;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
+[type=button],
+[type=reset],
+[type=submit],
 button {
   -webkit-appearance: none;
 }
@@ -142,7 +142,7 @@ button,
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
   border: none;
   border-radius: 0;
   background-color: transparent;
@@ -252,8 +252,7 @@ body {
   border-radius: 8px;
   padding: 12px 20px;
   background-color: getColor("grey08");
-  transition: background-color 250ms ease-in-out, border 250ms ease-in-out,
-    color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out, color 250ms ease-in-out;
 }
 .header__link--active:hover {
   background-color: getColor("grey15");
@@ -274,8 +273,7 @@ body {
   background-color: getColor("grey10");
   transform: translateX(100%);
   transition-duration: 350ms;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
-    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
 }
 
 .menu-container.is-open {
@@ -391,8 +389,7 @@ body {
 }
 .hero__image {
   height: 302px;
-  background-image: url(/src/assets/images/home/hero/multi-storey-mobile@1x.png),
-    url(/src/assets/images/home/hero/abstract-volume-mobile@1x.png);
+  background-image: url(/src/assets/images/home/hero/multi-storey-mobile@1x.png), url(/src/assets/images/home/hero/abstract-volume-mobile@1x.png);
   border-radius: 12px;
   margin-bottom: 56px;
 }
@@ -435,8 +432,7 @@ body {
   line-height: 150%;
   border: none;
   color: getColor("white");
-  transition: color 250ms ease-in-out, border 250ms ease-in-out,
-    background-color 250ms ease-in-out;
+  transition: color 250ms ease-in-out, border 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 .hero__list {
   display: flex;
@@ -516,8 +512,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-tablet@1x.png),
-      url(/src/assets/images/home/hero/abstract-volume-tablet@1x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-tablet@1x.png), url(/src/assets/images/home/hero/abstract-volume-tablet@1x.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: contain;
@@ -580,37 +575,23 @@ body {
     width: 24px;
     height: 24px;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-tablet@1x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-tablet@1x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-tablet@1x.webp), url(/src/assets/images/home/hero/abstract-volume-tablet@1x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-tablet@1x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-tablet@1x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-tablet@1x.webp), url(/src/assets/images/home/hero/abstract-volume-tablet@1x.webp);
       background-position: right;
       background-size: contain;
     }
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-tablet@2x.png),
-      url(/src/assets/images/home/hero/abstract-volume-tablet@2x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-tablet@2x.png), url(/src/assets/images/home/hero/abstract-volume-tablet@2x.png);
     background-position: right;
     background-size: contain;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-tablet@2x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-tablet@2x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-tablet@2x.webp), url(/src/assets/images/home/hero/abstract-volume-tablet@2x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-tablet@2x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-tablet@2x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-tablet@2x.webp), url(/src/assets/images/home/hero/abstract-volume-tablet@2x.webp);
       background-position: right;
       background-size: contain;
     }
@@ -618,8 +599,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-laptop@1x.png),
-      url(/src/assets/images/home/hero/abstract-volume-laptop@1x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-laptop@1x.png), url(/src/assets/images/home/hero/abstract-volume-laptop@1x.png);
   }
   .hero__main-wrap {
     padding: 98px 0;
@@ -656,37 +636,23 @@ body {
     top: 95px;
     left: 605px;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-laptop@1x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-laptop@1x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-laptop@1x.webp), url(/src/assets/images/home/hero/abstract-volume-laptop@1x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-laptop@1x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-laptop@1x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-laptop@1x.webp), url(/src/assets/images/home/hero/abstract-volume-laptop@1x.webp);
       background-position: right;
       background-size: contain;
     }
   }
 }
-@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1440px) and (min-resolution: 192dpi),
-  screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-laptop@2x.png),
-      url(/src/assets/images/home/hero/abstract-volume-laptop@2x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-laptop@2x.png), url(/src/assets/images/home/hero/abstract-volume-laptop@2x.png);
     background-position: right;
     background-size: contain;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-laptop@2x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-laptop@2x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-laptop@2x.webp), url(/src/assets/images/home/hero/abstract-volume-laptop@2x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-laptop@2x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-laptop@2x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-laptop@2x.webp), url(/src/assets/images/home/hero/abstract-volume-laptop@2x.webp);
       background-position: right;
       background-size: contain;
     }
@@ -694,8 +660,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-ldesktop@1x.png),
-      url(/src/assets/images/home/hero/abstract-volume-desktopp@1x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-ldesktop@1x.png), url(/src/assets/images/home/hero/abstract-volume-desktopp@1x.png);
   }
   .hero__main-wrap {
     padding: 144px 0;
@@ -755,37 +720,23 @@ body {
     width: 34px;
     height: 34px;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-desktop@1x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-desktop@1x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-desktop@1x.webp), url(/src/assets/images/home/hero/abstract-volume-desktop@1x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-desktop@1x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-desktop@1x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-desktop@1x.webp), url(/src/assets/images/home/hero/abstract-volume-desktop@1x.webp);
       background-position: right;
       background-size: contain;
     }
   }
 }
-@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1920px) and (min-resolution: 192dpi),
-  screen and (min-width: 1920px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1920px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/src/assets/images/home/hero/multi-storey-desktop@2x.png),
-      url(/src/assets/images/home/hero/abstract-volume-desktop@2x.png);
+    background-image: url(/src/assets/images/home/hero/multi-storey-desktop@2x.png), url(/src/assets/images/home/hero/abstract-volume-desktop@2x.png);
     background-position: right;
     background-size: contain;
   }
-  @supports (
-    background-image:
-      url(/src/assets/images/home/hero/multi-storey-desktop@2x.webp),
-    url(/src/assets/images/home/hero/abstract-volume-desktop@2x.webp)
-  ) {
+  @supports (background-image: url(/src/assets/images/home/hero/multi-storey-desktop@2x.webp), url(/src/assets/images/home/hero/abstract-volume-desktop@2x.webp)) {
     .hero {
-      background-image: url(/src/assets/images/home/hero/multi-storey-desktop@2x.webp),
-        url(/src/assets/images/home/hero/abstract-volume-desktop@2x.webp);
+      background-image: url(/src/assets/images/home/hero/multi-storey-desktop@2x.webp), url(/src/assets/images/home/hero/abstract-volume-desktop@2x.webp);
       background-position: right;
       background-size: contain;
     }
@@ -952,4 +903,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
