@@ -60,8 +60,6 @@ export default {
               case 'webp':
               case 'svg':
                 return `images/${outputPath}`;
-              case 'woff2':
-                return `fonts/${outputPath}`;
               case 'webmanifest':
                 return `${outputPath}`;
               default:
